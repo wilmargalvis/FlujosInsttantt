@@ -1,0 +1,15 @@
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\bin\Debug\net6.0\FlujosInsttantt.Infraestructure.deps.json
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\bin\Debug\net6.0\FlujosInsttantt.Infraestructure.dll
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\bin\Debug\net6.0\FlujosInsttantt.Infraestructure.pdb
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\bin\Debug\net6.0\FlujosInsttantt.Core.dll
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\bin\Debug\net6.0\FlujosInsttantt.Core.pdb
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.csproj.AssemblyReference.cache
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.AssemblyInfoInputs.cache
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.AssemblyInfo.cs
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.csproj.CoreCompileInputs.cache
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.csproj.CopyComplete
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.dll
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\refint\FlujosInsttantt.Infraestructure.dll
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\FlujosInsttantt.Infraestructure.pdb
+C:\ProyectosW\EjecutorFlujosInsttantt\FlujosInsttantt.Infraestructure\obj\Debug\net6.0\ref\FlujosInsttantt.Infraestructure.dll
