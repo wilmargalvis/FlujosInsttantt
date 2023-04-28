@@ -9,11 +9,13 @@ namespace FlujosInsttantt.Core.Interfaces
 {
     public interface IDBFLujo
     {
-        public Task<List<CamposDisponibles>> CargarCamposDisponibles();
+        public List<RptaCamposValidacionesDispoDB> CargarCamposValidacionesDispo();
 
-        public bool Guardar(CamposDisponibles camposDisponibles);
-        public bool Eliminar(CamposDisponibles camposDisponibles);
+        public Task<string> GuardarConfiguracionFlujo(FlujoCreado ObjFlujo);
 
-        public Flujos ConsultarFlujo(string CodigoFlujo);
+        public Task<string> GuardarConfiguracionPaso(PasoCreado ObjPaso);
+        public bool Eliminar(CamposValidacionesDispo camposDisponibles);
+
+        public Task<ConstruccionFlujos> ConsultarFlujo(string CodigoFlujo);
     }
 }

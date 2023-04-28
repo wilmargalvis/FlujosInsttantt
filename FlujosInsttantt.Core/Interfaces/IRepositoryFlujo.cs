@@ -8,14 +8,13 @@ namespace FlujosInsttantt.Core.Interfaces
 {
     public interface IRepositoryFlujo<T> where T : class
     {
-        public Task<List<T>> Listar();
+        //public List<T> CargarCamposValidacionesDispo();
         public T  Consultar();
 
         public bool Eliminar(T objeto);
         public bool Editar(T objeto);
 
         public bool ConsultarId(int  id);
-
 
 
 

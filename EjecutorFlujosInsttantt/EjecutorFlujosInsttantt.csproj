@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\FlujosInsttantt.Core\FlujosInsttantt.Core.csproj" />
     <ProjectReference Include="..\FlujosInsttantt.Infraestructure\FlujosInsttantt.Infraestructure.csproj" />
   </ItemGroup>

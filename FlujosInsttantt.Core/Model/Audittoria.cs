@@ -14,6 +14,6 @@ namespace FlujosInsttantt.Core.Model
            
         }
         public string UserName { get; set; }
-        public string FechaCreacion { get; set; }
+        public DateTime FechaTransaccion { get; set; }
     }
 }
