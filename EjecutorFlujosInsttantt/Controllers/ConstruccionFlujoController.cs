@@ -3,6 +3,7 @@ using FlujosInsttantt.Core.Model;
 using FlujosInsttantt.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static FlujosInsttantt.Core.Model.GuardarFlujoUsuario;
 
 namespace EjecutorFlujosInsttantt.Controllers
 {
@@ -23,18 +24,7 @@ namespace EjecutorFlujosInsttantt.Controllers
         }
 
 
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        //// GET: ConstruccionFlujoController/Details/5
-        //public ActionResult Details(int id)
-        //{
-        //    return View();
-        //}
-
-        // GET: https://localhost:7124/ConstruccionFlujo?id=10
+        // GET: https://localhost:7124/ConstruccionFlujo?Usuario=WilmarGalvis
 
         /// <summary>
         /// Este método carga los campos en el front para poder iniciar la construcción de los pasos del flujo
@@ -43,7 +33,7 @@ namespace EjecutorFlujosInsttantt.Controllers
         /// <param name="Auditoria"></param>
         /// <returns></returns>
         [HttpGet("")]
-        public ActionResult ConsultarCamposValidacionesDispo(string Usuario)
+        public ActionResult ConsultarCamposValidacionesDispo()
         {
             CamposValidacionesDispo data;
 
@@ -67,8 +57,8 @@ namespace EjecutorFlujosInsttantt.Controllers
         }
 
         /// <summary>
-        /// Este médodo carga la configuración de un flujo seleccionado(CodigoFlujo) para ser completado por el usuario
-        /// Ejemplo: FLJ-0001, FLJ-0002
+        /// Este método carga la configuración de un flujo seleccionado(CodigoFlujo) para ser completado por el usuario
+        /// Ejemplo: FLJ-0001, FLJ-0002, FLJ-0003
         /// </summary>
         /// <param name="CodigoFlujo"></param>
         /// <returns></returns>
@@ -98,12 +88,13 @@ namespace EjecutorFlujosInsttantt.Controllers
         }
 
         /// <summary>
-        /// Este médodo Guarda la configuración básica de un flujo que se está construllendo
-        /// Se pide parámetros y descriptivos y de config general del flujo. El SP de BD genera el código
+        /// Este método guarda la configuración básica de un flujo que se está construyendo.
+        ///Se pide parámetros descriptivos y de configuración general del flujo.
+        ///El SP de BD genera el código del flujo automáticamente.
         /// </summary>
         /// <param name="ObjFlujo"></param>
         /// <returns></returns>
-        [HttpPost("guardarconfigflujo")]
+                [HttpPost("guardarconfigflujo")]
         public async Task<ActionResult> GuardarConfiguracionFlujo(FlujoCreado ObjFlujo)
         {
             string result;
@@ -129,7 +120,7 @@ namespace EjecutorFlujosInsttantt.Controllers
         }
 
         /// <summary>
-        /// Este método solicita datos descriptivos del paso y si tiene un prerequisito del paso anterior
+        /// Este método solicita datos descriptivos del paso y si tiene un prerrequisito del paso anterior, cargado por la construcción del flujo.
         /// No requiere indicarle el código del paso, porque el SP de BD lo genera
         /// Se requiere conocer código del flujo(CodigoFlujo). Ejemplo: FLJ-0001, FLJ-0002, porque este fue previamente creado y guardado
         /// Determiné guardar el paso junto con los campos y sus validaciones, por comportarse como un componente del flujo
@@ -162,68 +153,7 @@ namespace EjecutorFlujosInsttantt.Controllers
         }
 
 
-        //// GET: ConstruccionFlujoController/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
 
-        //// POST: ConstruccionFlujoController/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
-        //// GET: ConstruccionFlujoController/Edit/5
-        //public ActionResult Edit(int id)
-        //{
-        //    return View();
-        //}
-
-        //// POST: ConstruccionFlujoController/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
-        //// GET: ConstruccionFlujoController/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View();
-        //}
-
-        //// POST: ConstruccionFlujoController/Delete/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Delete(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
 
     }
 }

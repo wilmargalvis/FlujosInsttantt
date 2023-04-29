@@ -289,9 +289,6 @@ namespace FlujosInsttantt.Infraestructure.DataBase
 
         }
 
-        public bool Eliminar(CamposValidacionesDispo camposDisponibles)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

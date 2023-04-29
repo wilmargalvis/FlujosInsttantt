@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddTransient<IDBFLujo, DBFlujo>();
+builder.Services.AddTransient<IDataUsuarioDB, DataUsuarioDB>();
 
 
 var app = builder.Build();

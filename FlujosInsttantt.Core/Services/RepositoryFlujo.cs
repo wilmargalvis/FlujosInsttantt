@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static FlujosInsttantt.Core.Model.GuardarFlujoUsuario;
 
 namespace FlujosInsttantt.Core.Services
 {
-    public class RepositoryGenericFlujo: IRepositoryFlujo<RptaCamposValidacionesDispoDB>
+    public class RepositoryGenericFlujo: IRepositoryFlujo<ConstruccionFlujos>
     {
-       private  IDBFLujo _dBFLujo;
+        private  IDBFLujo _dBFLujo;
         public RepositoryGenericFlujo(IDBFLujo dBFLujo)
         {
             _dBFLujo = dBFLujo;
@@ -57,22 +58,6 @@ namespace FlujosInsttantt.Core.Services
                     }
                 }
 
-                //List<ValidacionesDisponibles> Validaciones = _dBFLujo.CargarCamposValidacionesDispo()
-                //    .Where(p => p.CodigoCampoDispo == itemCampo.CodigoCampoDispo)
-                //    .Select(a => new { a.CodigoValidacionDisponible, a.MsgErrorValidacion, a.Tipo })
-                //    .OrderBy(n => n.CodigoValidacionDisponible)
-                //    .Distinct()
-                //    .ToList().ConvertAll(a =>
-                //    {
-                //        return new ValidacionesDisponibles()
-                //        {
-                //            CodigoValidacionDispo = a.CodigoValidacionDisponible,
-                //            MsgErrorValidacion = a.MsgErrorValidacion,
-                //            Tipo = a.Tipo
-                //        };
-
-                //    });
-
                 foreach (var item in CamposValidacionesDispo.CamposDisponibles)
                 {
                     if (item.CodigoCampoDispo == itemCampo.CodigoCampoDispo)
@@ -103,25 +88,6 @@ namespace FlujosInsttantt.Core.Services
             return _dBFLujo.GuardarConfiguracionPaso(ObjPaso);
         }
 
-        public bool ConsultarId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        RptaCamposValidacionesDispoDB IRepositoryFlujo<RptaCamposValidacionesDispoDB>.Consultar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Eliminar(RptaCamposValidacionesDispoDB objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Editar(RptaCamposValidacionesDispoDB objeto)
-        {
-            throw new NotImplementedException();
-        }
 
     }
 }

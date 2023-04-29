@@ -62,3 +62,4 @@ C:\ProyectosW\EjecutorFlujosInsttantt\EjecutorFlujosInsttantt\obj\Debug\net6.0\r
 C:\ProyectosW\EjecutorFlujosInsttantt\EjecutorFlujosInsttantt\obj\Debug\net6.0\EjecutorFlujosInsttantt.pdb
 C:\ProyectosW\EjecutorFlujosInsttantt\EjecutorFlujosInsttantt\obj\Debug\net6.0\EjecutorFlujosInsttantt.genruntimeconfig.cache
 C:\ProyectosW\EjecutorFlujosInsttantt\EjecutorFlujosInsttantt\obj\Debug\net6.0\ref\EjecutorFlujosInsttantt.dll
+C:\ProyectosW\EjecutorFlujosInsttantt\EjecutorFlujosInsttantt\obj\Debug\net6.0\EjecutorFlujosInsttantt.MvcApplicationPartsAssemblyInfo.cs
